@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{35EC7113-20A3-4548-86C0-F03B8CCED392}</ProjectGuid>
+    <RootNamespace>Zia</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)\ApiTaMere-1.0\ziatamer-1.0\include;$(SolutionDir)\ApiSocket;$(SolutionDir)\Binder;$(SolutionDir)\Zia\pthreads;$(SolutionDir)\Parser;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;WIN_LEAN_AND_MEAN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalDependencies>ws2_32.lib;pthreadVC2.lib;ApiTamere-1.0.lib;ApiSocket.lib;Parser.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AbsDl.cpp" />
+    <ClCompile Include="AllocateModule.cpp" />
+    <ClCompile Include="AWorker.cpp" />
+    <ClCompile Include="BasicStream.cpp" />
+    <ClCompile Include="BinderTask.cpp" />
+    <ClCompile Include="ConnectionBase.cpp" />
+    <ClCompile Include="DlManager.cpp" />
+    <ClCompile Include="HttpPairSort.cpp" />
+    <ClCompile Include="Linker.cpp" />
+    <ClCompile Include="Locker.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="ModuleFinder.cpp" />
+    <ClCompile Include="NewConnection.cpp" />
+    <ClCompile Include="Printer.cpp" />
+    <ClCompile Include="TaskHandler.cpp" />
+    <ClCompile Include="TaskPool.cpp" />
+    <ClCompile Include="TaskWorker.cpp" />
+    <ClCompile Include="Thread.cpp" />
+    <ClCompile Include="ThreadCond.cpp" />
+    <ClCompile Include="UrlDecoder.cpp" />
+    <ClCompile Include="UrlEncoder.cpp" />
+    <ClCompile Include="Zia.cpp" />
+    <ClCompile Include="ZiaConfig.cpp" />
+    <ClCompile Include="ZiaMessage.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AllocateModule.h" />
+    <ClInclude Include="AWorker.h" />
+    <ClInclude Include="BasicStream.h" />
+    <ClInclude Include="BinderTask.h" />
+    <ClInclude Include="ConnectionBase.h" />
+    <ClInclude Include="HttpPairSort.h" />
+    <ClInclude Include="ILocker.h" />
+    <ClInclude Include="ITask.h" />
+    <ClInclude Include="ITaskFct.h" />
+    <ClInclude Include="IThreadPool.h" />
+    <ClInclude Include="Linker.h" />
+    <ClInclude Include="Locker.h" />
+    <ClInclude Include="ModuleFinder.h" />
+    <ClInclude Include="NewConnection.h" />
+    <ClInclude Include="Printer.h" />
+    <ClInclude Include="TaskHandler.h" />
+    <ClInclude Include="TaskPool.h" />
+    <ClInclude Include="TaskWorker.h" />
+    <ClInclude Include="Thread.h" />
+    <ClInclude Include="ThreadCond.h" />
+    <ClInclude Include="UrlDecoder.h" />
+    <ClInclude Include="UrlEncoder.h" />
+    <ClInclude Include="Zia.h" />
+    <ClInclude Include="AbsDl.h" />
+    <ClInclude Include="ApiDlRevision.h" />
+    <ClInclude Include="DlManager.h" />
+    <ClInclude Include="IAbsDl.h" />
+    <ClInclude Include="MyMsgError.hpp" />
+    <ClInclude Include="MySingleton.hpp" />
+    <ClInclude Include="ZiaConfig.h" />
+    <ClInclude Include="ZiaMessage.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pthreads\pthreadVC2.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="pthreads\pthreadVC2.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

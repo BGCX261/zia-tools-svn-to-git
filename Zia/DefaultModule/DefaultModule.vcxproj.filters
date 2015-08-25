@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Fichiers sources">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Fichiers de ressources">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Fichiers sources\Step">
+      <UniqueIdentifier>{bfe77e46-7a8c-472a-9146-5dc499c6db32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Step">
+      <UniqueIdentifier>{5485246d-6ca0-4f23-81ed-016c4968a3f3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Default_EX.h">
+      <Filter>Fichiers d%27en-tête\Step</Filter>
+    </ClInclude>
+    <ClInclude Include="Default_PARSE.h">
+      <Filter>Fichiers d%27en-tête\Step</Filter>
+    </ClInclude>
+    <ClInclude Include="Default_RAW.h">
+      <Filter>Fichiers d%27en-tête\Step</Filter>
+    </ClInclude>
+    <ClInclude Include="Default_Module.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="Default_OUTPr.h">
+      <Filter>Fichiers d%27en-tête\Step</Filter>
+    </ClInclude>
+    <ClInclude Include="Default_IN.h">
+      <Filter>Fichiers d%27en-tête\Step</Filter>
+    </ClInclude>
+    <ClInclude Include="ReadStream.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="CheckOutput.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="Default_PARSEPo.h">
+      <Filter>Fichiers d%27en-tête\Step</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="init.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Default_EX.cpp">
+      <Filter>Fichiers sources\Step</Filter>
+    </ClCompile>
+    <ClCompile Include="Default_RAW.cpp">
+      <Filter>Fichiers sources\Step</Filter>
+    </ClCompile>
+    <ClCompile Include="Default_PARSE.cpp">
+      <Filter>Fichiers sources\Step</Filter>
+    </ClCompile>
+    <ClCompile Include="Default_OUTPr.cpp">
+      <Filter>Fichiers sources\Step</Filter>
+    </ClCompile>
+    <ClCompile Include="Default_IN.cpp">
+      <Filter>Fichiers sources\Step</Filter>
+    </ClCompile>
+    <ClCompile Include="ReadStream.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="CheckOutput.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Default_Module.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Default_PARSEPo.cpp">
+      <Filter>Fichiers sources\Step</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

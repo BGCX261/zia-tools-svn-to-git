@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DBB1723C-43F4-4262-B851-39DA1D317925}</ProjectGuid>
+    <RootNamespace>Parser</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)/ApiTaMere-1.0/ziatamer-1.0/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>$(SolutionDir)\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ApiTamere-1.0.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="AbsolutPathMPRule.h" />
+    <ClInclude Include="AlphaNumMPRule.h" />
+    <ClInclude Include="ChunkedMPRule.h" />
+    <ClInclude Include="CompareMPRule.h" />
+    <ClInclude Include="ConfContentMPRule.h" />
+    <ClInclude Include="HeaderHTTPMPRule.h" />
+    <ClInclude Include="HexadecimalMPRule.h" />
+    <ClInclude Include="IMPRule.h" />
+    <ClInclude Include="KeyValueMPRule.h" />
+    <ClInclude Include="MPMessage.h" />
+    <ClInclude Include="MPOption.h" />
+    <ClInclude Include="MPParser.hpp" />
+    <ClInclude Include="MPPolicyMust.h" />
+    <ClInclude Include="MPPolicyOptional.h" />
+    <ClInclude Include="MPPolicyOptionalRepeat.h" />
+    <ClInclude Include="MPPolicyRepeat.h" />
+    <ClInclude Include="MPPolicyRepeatTab.h" />
+    <ClInclude Include="NumericMPRule.h" />
+    <ClInclude Include="ReadLastMPRule.h" />
+    <ClInclude Include="ReadUntilMPRule.h" />
+    <ClInclude Include="RequestHTTPMPRule.h" />
+    <ClInclude Include="RequestLineMPRule.h" />
+    <ClInclude Include="SentenceMPRule.h" />
+    <ClInclude Include="StringMPRule.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ChunkedMPRule.cpp" />
+    <ClCompile Include="ConfContentMPRule.cpp" />
+    <ClCompile Include="HexadecimalMPRule.cpp" />
+    <ClCompile Include="MPPolicyRepeatTab.cpp" />
+    <ClCompile Include="AbsolutPathMPRule.cpp" />
+    <ClCompile Include="AlphaNumMPRule.cpp" />
+    <ClCompile Include="CompareMPRule.cpp" />
+    <ClCompile Include="HeaderHTTPMPRule.cpp" />
+    <ClCompile Include="IMPRule.cpp" />
+    <ClCompile Include="KeyValueMPRule.cpp" />
+    <ClCompile Include="MPMessage.cpp" />
+    <ClCompile Include="MPOption.cpp" />
+    <ClCompile Include="MPPolicyMust.cpp" />
+    <ClCompile Include="MPPolicyOptional.cpp" />
+    <ClCompile Include="MPPolicyOptionalRepeat.cpp" />
+    <ClCompile Include="MPPolicyRepeat.cpp" />
+    <ClCompile Include="NumericMPRule.cpp" />
+    <ClCompile Include="ReadLastMPRule.cpp" />
+    <ClCompile Include="ReadUntilMPRule.cpp" />
+    <ClCompile Include="RequestHTTPMPRule.cpp" />
+    <ClCompile Include="RequestLineMPRule.cpp" />
+    <ClCompile Include="SentenceMPRule.cpp" />
+    <ClCompile Include="StringMPRule.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files\dl">
+      <UniqueIdentifier>{129adbde-1e33-47a2-b495-b2f0fc6b3641}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\zia">
+      <UniqueIdentifier>{8cb3da6b-2d3e-4dc3-8659-2357e74c72bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\zia\core">
+      <UniqueIdentifier>{87d24686-2682-4d05-9586-f7a6ceb10cdd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\zia">
+      <UniqueIdentifier>{014ece10-33d3-41cc-ad40-b7edd48fe5af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\zia\core">
+      <UniqueIdentifier>{0d9bba05-9b5e-44ad-850f-6b1cbd4b92bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\zia\utils">
+      <UniqueIdentifier>{4eb01fcf-38e0-432e-b59c-a0aa6b3e5e71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\zia\utils">
+      <UniqueIdentifier>{f02cd4fd-25dc-43c0-b178-ace79f156ba3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\thread">
+      <UniqueIdentifier>{db56867f-7618-463c-8528-5419e9c1c318}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\thread">
+      <UniqueIdentifier>{d6605265-7e53-4ce9-a082-74b6a434e2d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\dl">
+      <UniqueIdentifier>{692a75a0-dd14-4259-b8f1-62c7ae138ee7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AbsDl.cpp">
+      <Filter>Source Files\dl</Filter>
+    </ClCompile>
+    <ClCompile Include="DlManager.cpp">
+      <Filter>Source Files\dl</Filter>
+    </ClCompile>
+    <ClCompile Include="AllocateModule.cpp">
+      <Filter>Source Files\zia\core</Filter>
+    </ClCompile>
+    <ClCompile Include="HttpPairSort.cpp">
+      <Filter>Source Files\zia\core</Filter>
+    </ClCompile>
+    <ClCompile Include="ModuleFinder.cpp">
+      <Filter>Source Files\zia\core</Filter>
+    </ClCompile>
+    <ClCompile Include="ConnectionBase.cpp">
+      <Filter>Source Files\zia</Filter>
+    </ClCompile>
+    <ClCompile Include="Printer.cpp">
+      <Filter>Source Files\zia</Filter>
+    </ClCompile>
+    <ClCompile Include="ZiaConfig.cpp">
+      <Filter>Source Files\zia</Filter>
+    </ClCompile>
+    <ClCompile Include="Zia.cpp">
+      <Filter>Source Files\zia</Filter>
+    </ClCompile>
+    <ClCompile Include="ZiaMessage.cpp">
+      <Filter>Source Files\zia</Filter>
+    </ClCompile>
+    <ClCompile Include="BasicStream.cpp">
+      <Filter>Source Files\zia</Filter>
+    </ClCompile>
+    <ClCompile Include="Linker.cpp">
+      <Filter>Source Files\zia</Filter>
+    </ClCompile>
+    <ClCompile Include="UrlDecoder.cpp">
+      <Filter>Source Files\zia\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="UrlEncoder.cpp">
+      <Filter>Source Files\zia\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="NewConnection.cpp">
+      <Filter>Source Files\zia\core</Filter>
+    </ClCompile>
+    <ClCompile Include="AWorker.cpp">
+      <Filter>Source Files\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="BinderTask.cpp">
+      <Filter>Source Files\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="Locker.cpp">
+      <Filter>Source Files\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskHandler.cpp">
+      <Filter>Source Files\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread.cpp">
+      <Filter>Source Files\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="ThreadCond.cpp">
+      <Filter>Source Files\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskWorker.cpp">
+      <Filter>Source Files\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskPool.cpp">
+      <Filter>Source Files\thread</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AbsDl.h">
+      <Filter>Header Files\dl</Filter>
+    </ClInclude>
+    <ClInclude Include="ApiDlRevision.h">
+      <Filter>Header Files\dl</Filter>
+    </ClInclude>
+    <ClInclude Include="DlManager.h">
+      <Filter>Header Files\dl</Filter>
+    </ClInclude>
+    <ClInclude Include="IAbsDl.h">
+      <Filter>Header Files\dl</Filter>
+    </ClInclude>
+    <ClInclude Include="MyMsgError.hpp">
+      <Filter>Header Files\dl</Filter>
+    </ClInclude>
+    <ClInclude Include="MySingleton.hpp">
+      <Filter>Header Files\dl</Filter>
+    </ClInclude>
+    <ClInclude Include="AllocateModule.h">
+      <Filter>Header Files\zia\core</Filter>
+    </ClInclude>
+    <ClInclude Include="ConnectionBase.h">
+      <Filter>Header Files\zia\core</Filter>
+    </ClInclude>
+    <ClInclude Include="HttpPairSort.h">
+      <Filter>Header Files\zia\core</Filter>
+    </ClInclude>
+    <ClInclude Include="NewConnection.h">
+      <Filter>Header Files\zia\core</Filter>
+    </ClInclude>
+    <ClInclude Include="Printer.h">
+      <Filter>Header Files\zia</Filter>
+    </ClInclude>
+    <ClInclude Include="ZiaMessage.h">
+      <Filter>Header Files\zia</Filter>
+    </ClInclude>
+    <ClInclude Include="ModuleFinder.h">
+      <Filter>Header Files\zia</Filter>
+    </ClInclude>
+    <ClInclude Include="ZiaConfig.h">
+      <Filter>Header Files\zia</Filter>
+    </ClInclude>
+    <ClInclude Include="Zia.h">
+      <Filter>Header Files\zia</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicStream.h">
+      <Filter>Header Files\zia</Filter>
+    </ClInclude>
+    <ClInclude Include="Linker.h">
+      <Filter>Header Files\zia</Filter>
+    </ClInclude>
+    <ClInclude Include="UrlDecoder.h">
+      <Filter>Header Files\zia\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="UrlEncoder.h">
+      <Filter>Header Files\zia\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="AWorker.h">
+      <Filter>Header Files\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="BinderTask.h">
+      <Filter>Header Files\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="ILocker.h">
+      <Filter>Header Files\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="ITask.h">
+      <Filter>Header Files\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="ITaskFct.h">
+      <Filter>Header Files\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Locker.h">
+      <Filter>Header Files\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="IThreadPool.h">
+      <Filter>Header Files\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskHandler.h">
+      <Filter>Header Files\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskPool.h">
+      <Filter>Header Files\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskWorker.h">
+      <Filter>Header Files\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread.h">
+      <Filter>Header Files\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadCond.h">
+      <Filter>Source Files\thread</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pthreads\pthreadVC2.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="pthreads\pthreadVC2.lib" />
+  </ItemGroup>
+</Project>

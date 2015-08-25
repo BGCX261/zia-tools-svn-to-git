@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Fichiers d%27en-tête">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Fichiers de ressources">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Rules">
+      <UniqueIdentifier>{b72cc6d5-11e2-4371-9ea0-c19bfd688fd1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Policy">
+      <UniqueIdentifier>{ca14f0eb-d395-4e34-ad54-c619fc0a9139}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources">
+      <UniqueIdentifier>{2d5bef6a-2fe6-4e33-8613-f9460c6dfc3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Policy">
+      <UniqueIdentifier>{4205bfb3-d2af-4c4c-9e7b-bdb5a8816e2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Rules">
+      <UniqueIdentifier>{8a813368-71bb-4396-a1cf-26a47ee6b8b6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MPOption.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="MPParser.hpp">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="AlphaNumMPRule.h">
+      <Filter>Fichiers d%27en-tête\Rules</Filter>
+    </ClInclude>
+    <ClInclude Include="MPPolicyMust.h">
+      <Filter>Fichiers d%27en-tête\Policy</Filter>
+    </ClInclude>
+    <ClInclude Include="MPMessage.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="MPPolicyOptional.h">
+      <Filter>Fichiers d%27en-tête\Policy</Filter>
+    </ClInclude>
+    <ClInclude Include="MPPolicyOptionalRepeat.h">
+      <Filter>Fichiers d%27en-tête\Policy</Filter>
+    </ClInclude>
+    <ClInclude Include="MPPolicyRepeat.h">
+      <Filter>Fichiers d%27en-tête\Policy</Filter>
+    </ClInclude>
+    <ClInclude Include="IMPRule.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="NumericMPRule.h">
+      <Filter>Fichiers d%27en-tête\Rules</Filter>
+    </ClInclude>
+    <ClInclude Include="ReadUntilMPRule.h">
+      <Filter>Fichiers d%27en-tête\Rules</Filter>
+    </ClInclude>
+    <ClInclude Include="RequestHTTPMPRule.h">
+      <Filter>Fichiers d%27en-tête\Rules</Filter>
+    </ClInclude>
+    <ClInclude Include="RequestLineMPRule.h">
+      <Filter>Fichiers d%27en-tête\Rules</Filter>
+    </ClInclude>
+    <ClInclude Include="SentenceMPRule.h">
+      <Filter>Fichiers d%27en-tête\Rules</Filter>
+    </ClInclude>
+    <ClInclude Include="StringMPRule.h">
+      <Filter>Fichiers d%27en-tête\Rules</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyValueMPRule.h">
+      <Filter>Fichiers d%27en-tête\Rules</Filter>
+    </ClInclude>
+    <ClInclude Include="CompareMPRule.h">
+      <Filter>Fichiers d%27en-tête\Rules</Filter>
+    </ClInclude>
+    <ClInclude Include="HeaderHTTPMPRule.h">
+      <Filter>Fichiers d%27en-tête\Rules</Filter>
+    </ClInclude>
+    <ClInclude Include="AbsolutPathMPRule.h">
+      <Filter>Fichiers d%27en-tête\Rules</Filter>
+    </ClInclude>
+    <ClInclude Include="ReadLastMPRule.h">
+      <Filter>Fichiers d%27en-tête\Rules</Filter>
+    </ClInclude>
+    <ClInclude Include="MPPolicyRepeatTab.h">
+      <Filter>Fichiers d%27en-tête\Policy</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfContentMPRule.h">
+      <Filter>Fichiers d%27en-tête\Rules</Filter>
+    </ClInclude>
+    <ClInclude Include="HexadecimalMPRule.h">
+      <Filter>Fichiers d%27en-tête\Rules</Filter>
+    </ClInclude>
+    <ClInclude Include="ChunkedMPRule.h">
+      <Filter>Fichiers d%27en-tête\Rules</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="IMPRule.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="MPOption.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="MPPolicyMust.cpp">
+      <Filter>Fichiers sources\Policy</Filter>
+    </ClCompile>
+    <ClCompile Include="MPPolicyOptional.cpp">
+      <Filter>Fichiers sources\Policy</Filter>
+    </ClCompile>
+    <ClCompile Include="MPPolicyOptionalRepeat.cpp">
+      <Filter>Fichiers sources\Policy</Filter>
+    </ClCompile>
+    <ClCompile Include="MPPolicyRepeat.cpp">
+      <Filter>Fichiers sources\Policy</Filter>
+    </ClCompile>
+    <ClCompile Include="AlphaNumMPRule.cpp">
+      <Filter>Fichiers sources\Rules</Filter>
+    </ClCompile>
+    <ClCompile Include="CompareMPRule.cpp">
+      <Filter>Fichiers sources\Rules</Filter>
+    </ClCompile>
+    <ClCompile Include="HeaderHTTPMPRule.cpp">
+      <Filter>Fichiers sources\Rules</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyValueMPRule.cpp">
+      <Filter>Fichiers sources\Rules</Filter>
+    </ClCompile>
+    <ClCompile Include="NumericMPRule.cpp">
+      <Filter>Fichiers sources\Rules</Filter>
+    </ClCompile>
+    <ClCompile Include="ReadUntilMPRule.cpp">
+      <Filter>Fichiers sources\Rules</Filter>
+    </ClCompile>
+    <ClCompile Include="RequestHTTPMPRule.cpp">
+      <Filter>Fichiers sources\Rules</Filter>
+    </ClCompile>
+    <ClCompile Include="RequestLineMPRule.cpp">
+      <Filter>Fichiers sources\Rules</Filter>
+    </ClCompile>
+    <ClCompile Include="SentenceMPRule.cpp">
+      <Filter>Fichiers sources\Rules</Filter>
+    </ClCompile>
+    <ClCompile Include="StringMPRule.cpp">
+      <Filter>Fichiers sources\Rules</Filter>
+    </ClCompile>
+    <ClCompile Include="MPMessage.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="AbsolutPathMPRule.cpp">
+      <Filter>Fichiers sources\Rules</Filter>
+    </ClCompile>
+    <ClCompile Include="ReadLastMPRule.cpp">
+      <Filter>Fichiers sources\Rules</Filter>
+    </ClCompile>
+    <ClCompile Include="MPPolicyRepeatTab.cpp">
+      <Filter>Fichiers sources\Policy</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfContentMPRule.cpp">
+      <Filter>Fichiers sources\Rules</Filter>
+    </ClCompile>
+    <ClCompile Include="HexadecimalMPRule.cpp">
+      <Filter>Fichiers sources\Rules</Filter>
+    </ClCompile>
+    <ClCompile Include="ChunkedMPRule.cpp">
+      <Filter>Fichiers sources\Rules</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

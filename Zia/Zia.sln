@@ -1,0 +1,88 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Zia", "Zia\Zia.vcxproj", "{35EC7113-20A3-4548-86C0-F03B8CCED392}"
+	ProjectSection(ProjectDependencies) = postProject
+		{502E2B05-D517-400A-A4D9-F964B6ECDD4A} = {502E2B05-D517-400A-A4D9-F964B6ECDD4A}
+		{6EA0603F-4D83-4BD7-A811-8C1E67BEB727} = {6EA0603F-4D83-4BD7-A811-8C1E67BEB727}
+		{F3D2A95A-9453-4A10-8442-84529747478F} = {F3D2A95A-9453-4A10-8442-84529747478F}
+		{419B10E4-E070-4A43-845C-9A353927D3E8} = {419B10E4-E070-4A43-845C-9A353927D3E8}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ApiSocket", "ApiSocket\ApiSocket.vcxproj", "{419B10E4-E070-4A43-845C-9A353927D3E8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ServerTest", "ServerTest\ServerTest.vcxproj", "{97094EF9-8FBD-4254-A9F2-FCF3D930DA9F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{419B10E4-E070-4A43-845C-9A353927D3E8} = {419B10E4-E070-4A43-845C-9A353927D3E8}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Parser", "Parser\Parser.vcxproj", "{DBB1723C-43F4-4262-B851-39DA1D317925}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6EA0603F-4D83-4BD7-A811-8C1E67BEB727} = {6EA0603F-4D83-4BD7-A811-8C1E67BEB727}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ZiaFile", "ZiaFile\ZiaFile.vcxproj", "{502E2B05-D517-400A-A4D9-F964B6ECDD4A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DefaultModule", "DefaultModule\DefaultModule.vcxproj", "{F3D2A95A-9453-4A10-8442-84529747478F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{502E2B05-D517-400A-A4D9-F964B6ECDD4A} = {502E2B05-D517-400A-A4D9-F964B6ECDD4A}
+		{DBB1723C-43F4-4262-B851-39DA1D317925} = {DBB1723C-43F4-4262-B851-39DA1D317925}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ApiTaMere-1.0", "ApiTaMere-1.0\ApiTaMere-1.0.vcxproj", "{6EA0603F-4D83-4BD7-A811-8C1E67BEB727}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Binder", "Binder\Binder.vcxproj", "{4F625B61-FE3A-4CAD-AA38-F17A8AF41ABC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SslModule", "SslModule\SslModule.vcxproj", "{5CBC539A-77D3-41CD-A4D8-9581603D0ADB}"
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35EC7113-20A3-4548-86C0-F03B8CCED392}.Debug|Win32.ActiveCfg = Debug|Win32
+		{35EC7113-20A3-4548-86C0-F03B8CCED392}.Debug|Win32.Build.0 = Debug|Win32
+		{35EC7113-20A3-4548-86C0-F03B8CCED392}.Release|Win32.ActiveCfg = Release|Win32
+		{35EC7113-20A3-4548-86C0-F03B8CCED392}.Release|Win32.Build.0 = Release|Win32
+		{419B10E4-E070-4A43-845C-9A353927D3E8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{419B10E4-E070-4A43-845C-9A353927D3E8}.Debug|Win32.Build.0 = Debug|Win32
+		{419B10E4-E070-4A43-845C-9A353927D3E8}.Release|Win32.ActiveCfg = Release|Win32
+		{419B10E4-E070-4A43-845C-9A353927D3E8}.Release|Win32.Build.0 = Release|Win32
+		{97094EF9-8FBD-4254-A9F2-FCF3D930DA9F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{97094EF9-8FBD-4254-A9F2-FCF3D930DA9F}.Debug|Win32.Build.0 = Debug|Win32
+		{97094EF9-8FBD-4254-A9F2-FCF3D930DA9F}.Release|Win32.ActiveCfg = Release|Win32
+		{97094EF9-8FBD-4254-A9F2-FCF3D930DA9F}.Release|Win32.Build.0 = Release|Win32
+		{DBB1723C-43F4-4262-B851-39DA1D317925}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DBB1723C-43F4-4262-B851-39DA1D317925}.Debug|Win32.Build.0 = Debug|Win32
+		{DBB1723C-43F4-4262-B851-39DA1D317925}.Release|Win32.ActiveCfg = Release|Win32
+		{DBB1723C-43F4-4262-B851-39DA1D317925}.Release|Win32.Build.0 = Release|Win32
+		{502E2B05-D517-400A-A4D9-F964B6ECDD4A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{502E2B05-D517-400A-A4D9-F964B6ECDD4A}.Debug|Win32.Build.0 = Debug|Win32
+		{502E2B05-D517-400A-A4D9-F964B6ECDD4A}.Release|Win32.ActiveCfg = Release|Win32
+		{502E2B05-D517-400A-A4D9-F964B6ECDD4A}.Release|Win32.Build.0 = Release|Win32
+		{F3D2A95A-9453-4A10-8442-84529747478F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F3D2A95A-9453-4A10-8442-84529747478F}.Debug|Win32.Build.0 = Debug|Win32
+		{F3D2A95A-9453-4A10-8442-84529747478F}.Release|Win32.ActiveCfg = Release|Win32
+		{F3D2A95A-9453-4A10-8442-84529747478F}.Release|Win32.Build.0 = Release|Win32
+		{6EA0603F-4D83-4BD7-A811-8C1E67BEB727}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6EA0603F-4D83-4BD7-A811-8C1E67BEB727}.Debug|Win32.Build.0 = Debug|Win32
+		{6EA0603F-4D83-4BD7-A811-8C1E67BEB727}.Release|Win32.ActiveCfg = Release|Win32
+		{6EA0603F-4D83-4BD7-A811-8C1E67BEB727}.Release|Win32.Build.0 = Release|Win32
+		{4F625B61-FE3A-4CAD-AA38-F17A8AF41ABC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4F625B61-FE3A-4CAD-AA38-F17A8AF41ABC}.Debug|Win32.Build.0 = Debug|Win32
+		{4F625B61-FE3A-4CAD-AA38-F17A8AF41ABC}.Release|Win32.ActiveCfg = Release|Win32
+		{4F625B61-FE3A-4CAD-AA38-F17A8AF41ABC}.Release|Win32.Build.0 = Release|Win32
+		{5CBC539A-77D3-41CD-A4D8-9581603D0ADB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5CBC539A-77D3-41CD-A4D8-9581603D0ADB}.Debug|Win32.Build.0 = Debug|Win32
+		{5CBC539A-77D3-41CD-A4D8-9581603D0ADB}.Release|Win32.ActiveCfg = Release|Win32
+		{5CBC539A-77D3-41CD-A4D8-9581603D0ADB}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
